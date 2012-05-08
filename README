@@ -1,0 +1,69 @@
+---------------------------------------------------
+DESeq-hts: A Galaxy wrapper for DESeq version 1.6.0
+---------------------------------------------------
+
+Description:
+    DESeq can be used as a web service embedded in a Galaxy instance. 
+    We call it as DESeq-hts. 
+
+Requirements: 
+    MATLAB/OCTAVE and Python :- Preprocessing of sequencing reads and GFF files
+    R, Bio-conductor package :- Required for DESEQ 
+    SCIPY, NUMPY :- for python  
+    SAMTOOLS :- Read processing 
+
+Contents:
+    [src]
+    All relevant scripts for DESeq-hts are located in the subdirectory
+    src. src/deseq.sh is the main script to start DESeq-hts. The 
+    preprocessing of BAM and GFF file start before the R DESEQ script. 
+	Please follow the shell script to understand the details. 
+    
+    [galaxy]
+    Galaxy tool configuration file can be found galaxy folder. Please 
+    make necessary editing for .xml file and remaining .sh files and 
+    perform few tests. 
+
+    [setup_deseq-hts.sh]
+    Setup script for DESeq-hts.
+
+    [mex]
+    matlab executable files.
+
+    [bin]
+    Contains deseq_config.sh file which is used for the configuration of 
+    DESeq-hts. According to your platform, the default file will be changed.
+
+    [test_data]
+    This subsirectory contains all data for running a functional test in
+    Galaxy framework. You may need to move these test files into the test-data
+    directory.
+
+    [tools]
+    A python based GFF parsing program.
+
+Getting started:
+
+    Run ./setup_deseq-hts.sh and setup paths and configuration options for DESeq-hts.
+
+    Inside the mex folder execute the make file to create platform dependent .mex files 
+	    cd mex/Makefile 
+	    make 
+ 
+Licenses:
+    If **DESeq** is used to obtain results for scientific publications it should be cited as [1].
+
+    This wrapper program (DESeq-hts) is free software; you can redistribute it and/or modify it 
+    under the terms of the GNU General Public License as published by the Free Software Foundation; 
+    either version 3 of the License, or (at your option) any later version.
+
+    Written (W) 2009-2012 Jonas Behr, Regina Bohnert, Andre Kahles, Gunnar Raetsch, Vipin T. Sreedharan
+    Copyright (C) 2009-2012 Friedrich Miescher Laboratory of the Max Planck Society, Tubingen, Germany and 
+                  2012 cBio Memorial Sloan Kettering Cancer Center, New York City, USA.
+
+References:
+    [1] Anders, S and Huber, W (2010): `Differential expression analysis for sequence count data`. 
+
+Contact:
+    vipin@cbio.mskcc.org 
+
