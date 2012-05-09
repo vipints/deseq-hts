@@ -40,16 +40,22 @@ Contents:
     directory.
 
     [tools]
-    A python based GFF parsing program.
+    A python based GFF parsing program. Also contains small utils programs.
 
 Getting started:
+    Check for all requirements first, then
 
-    Run ./setup_deseq-hts.sh and setup paths and configuration options for DESeq-hts.
+    a) Run ./setup_deseq-hts.sh and setup paths and configuration options for DESeq-hts.
 
-    Inside the mex folder execute the make file to create platform dependent .mex files 
+    b) Inside the mex folder execute the make file to create platform dependent .mex files 
 	    cd mex/Makefile 
-	    make 
- 
+	    make [interpreter] 
+            make octave for octave 
+            make matlab for matlab 
+            make all for octave and matlab 
+
+    c) Edit the Galaxy tool configuration file to adjust the path if necessary. 
+
 Licenses:
     If **DESeq** is used to obtain results for scientific publications it should be cited as [1].
 
