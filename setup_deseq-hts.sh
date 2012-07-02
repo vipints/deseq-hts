@@ -15,7 +15,6 @@ then
 fi
 echo '=>' Setting DESeq-hts base directory to \"$DESEQ_PATH\"
 echo
-
 echo SAMTools directory \(currently set to \"$SAMTOOLS_DIR\", system version used if left empty\)
 read SAMTOOLS_DIR
 if [ "$SAMTOOLS_DIR" == "" ];

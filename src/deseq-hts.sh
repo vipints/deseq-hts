@@ -68,7 +68,7 @@ done
 tmpfile=`mktemp --tmpdir=/tmp`
 
 echo "${DIR}/../bin/get_read_counts ${GENES_FN} $tmpfile $@"
-${DIR}/../bin/get_read_counts ${GENES_FN} $tmpfile $@ 2>&1
+${DIR}/../bin/get_read_counts ${GENES_FN} $tmpfile "$@" 2>&1
 
 echo
 echo %%%%%%%%%%%%%%%%%%%%%%%%%%%

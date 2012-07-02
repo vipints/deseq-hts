@@ -6,6 +6,7 @@ deseq-hts/src/deseq-hts.sh $anno_input_selected $deseq_out $deseq_out.extra_file
 #for $j in $i.replicates
 $j.bam_alignment:#slurp
 #end for
+
 #end for
     >> $Log_File </command>
   <inputs>
