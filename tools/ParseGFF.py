@@ -342,7 +342,7 @@ def GFFParse(gff_file):
 
 def __main__():
     """This function provides a best way to extract genome feature 
-       information from a GFF3 file for the rQuant downstream processing.
+       information from a GFF3 file for the downstream processing.
     """
     try:
         gff_file = sys.argv[1]

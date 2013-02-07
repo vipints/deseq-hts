@@ -1,6 +1,6 @@
----------------------------------------------------
-DESeq-hts: A Galaxy wrapper for DESeq version 1.6.0
----------------------------------------------------
+----------------------------------------------------
+DESeq-hts: A Galaxy wrapper for DESeq version 1.10.1
+----------------------------------------------------
 
 Description:
     DESeq can be used as a web service embedded in a Galaxy instance. 
@@ -8,38 +8,38 @@ Description:
 
 Requirements: 
     MATLAB/OCTAVE and Python :- Preprocessing of sequencing reads and GFF files
-    R, Bio-conductor package :- Required for DESEQ 
+    R, Bio-conductor package :- Required for DESeq 
     SCIPY, NUMPY :- for python  
-    SAMTOOLS :- Read processing 
+    SAMTOOLS :- Sequencing read processing 
 
 Contents:
-    [src]
+    ./src
     All relevant scripts for DESeq-hts are located in the subdirectory
-    src. src/deseq.sh is the main script to start DESeq-hts. The 
-    preprocessing of BAM and GFF file start before the R DESEQ script. 
+    src. src/deseq-hts.sh is the main script to start DESeq-hts. The 
+    preprocessing of BAM and GFF file start before the R DESeq script. 
 	Please follow the shell script to understand the details. 
     
-    [galaxy]
+    ./galaxy
     Galaxy tool configuration file can be found galaxy folder. Please 
     make necessary editing for .xml file and remaining .sh files and 
     perform few tests. 
 
-    [setup_deseq-hts.sh]
+    ./setup_deseq-hts.sh
     Setup script for DESeq-hts.
 
-    [mex]
+    ./mex
     matlab executable files.
 
-    [bin]
+    ./bin
     Contains deseq_config.sh file which is used for the configuration of 
     DESeq-hts. According to your platform, the default file will be changed.
 
-    [test_data]
-    This subsirectory contains all data for running a functional test in
+    ./test_data
+    This sub-directory contains all data for running a functional test in
     Galaxy framework. You may need to move these test files into the test-data
     directory.
 
-    [tools]
+    ./tools
     A python based GFF parsing program. Also contains small utils programs.
 
 Getting started:
@@ -65,7 +65,7 @@ Licenses:
 
     Written (W) 2009-2012 Jonas Behr, Regina Bohnert, Andre Kahles, Gunnar Raetsch, Vipin T. Sreedharan
     Copyright (C) 2009-2012 Friedrich Miescher Laboratory of the Max Planck Society, Tubingen, Germany and 
-                  2012 cBio Memorial Sloan Kettering Cancer Center, New York City, USA.
+                  2013 cBio Memorial Sloan Kettering Cancer Center, New York City, USA.
 
 References:
     [1] Anders, S and Huber, W (2010): `Differential expression analysis for sequence count data`. 

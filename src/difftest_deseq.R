@@ -1,4 +1,4 @@
-library( DESeq )
+suppressMessages(require("DESeq"))
 
 ### get arguments 1: INFILE, 2: OUTFILE 3:SIZE
 args <- commandArgs()
@@ -31,7 +31,7 @@ if (length(levels(conds)) < length(conds))
 {
     cds <- estimateDispersions( cds )
 } else {
-    writeLines("\nYou did not enter any replicates! - The results may be less valuable without replicates!\n")
+    writeLines("\n***You did not enter any replicates! - The results may be less valuable without replicates!***\n")
     cds <- estimateDispersions( cds, method='blind', sharingMode='fit-only')
 }
 experiments <- levels(conds)
@@ -43,7 +43,7 @@ for (i in 1:(length(experiments)-1))
    for( j in (i+1):(length(experiments)))
    {
        print(c(i,j))
-       tempres <- nbinomTest(cds,experiments[i],experiments[j])
+       tempres <- nbinomTest(cds,experiments[i],experiments[j],pvals_only = FALSE, eps=NULL)
        res = cbind(res,tempres[,7])
        #res = cbind(res,tempres[,8])
        table_col_names = cbind(table_col_names,paste('cond_', experiments[i], '_vs._cond_', experiments[j], sep='')) 

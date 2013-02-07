@@ -1,7 +1,8 @@
 #!/bin/bash
 set -e 
 
-. ./bin/deseq_config.sh
+DIR=`dirname $0`
+. ${DIR}/./bin/deseq_config.sh
 
 echo ==========================================
 echo  DESeq-hts setup script \(DESeq version $DESEQ_VERSION\) 

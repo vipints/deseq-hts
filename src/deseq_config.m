@@ -30,6 +30,7 @@ SAMTOOLS_DIR = getenv('SAMTOOLS_DIR');
 
 % switch off a few expected warnings
 addpath(sprintf('%s/tools', DESEQ_PATH));
+engine='';
 lserve=license;
 if ~isequal(lserve, 'GNU General Public License'),
     engine='matlab';
