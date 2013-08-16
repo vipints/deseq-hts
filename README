@@ -3,16 +3,19 @@ DESeq-hts: A Galaxy wrapper for DESeq version 1.10.1
 ----------------------------------------------------
 
 Description:
+------------
     DESeq can be used as a web service embedded in a Galaxy instance. 
     We call it as DESeq-hts. 
 
-Requirements: 
+Requirements:
+-------------
     MATLAB/OCTAVE and Python :- Preprocessing of sequencing reads and GFF files
     R, Bio-conductor package :- Required for DESeq 
     SCIPY, NUMPY :- for python  
     SAMTOOLS :- Sequencing read processing 
 
 Contents:
+---------
     ./src
     All relevant scripts for DESeq-hts are located in the subdirectory
     src. src/deseq-hts.sh is the main script to start DESeq-hts. The 
@@ -43,6 +46,7 @@ Contents:
     A python based GFF parsing program. Also contains small utils programs.
 
 Getting started:
+----------------
     Check for all requirements first, then
 
     a) Run ./setup_deseq-hts.sh and setup paths and configuration options for DESeq-hts.
@@ -57,6 +61,7 @@ Getting started:
     c) Edit the Galaxy tool configuration file to adjust the path if necessary. 
 
 Licenses:
+---------
     If **DESeq** is used to obtain results for scientific publications it should be cited as [1].
 
     This wrapper program (DESeq-hts) is free software; you can redistribute it and/or modify it 
@@ -68,8 +73,18 @@ Licenses:
                   2013 cBio Memorial Sloan Kettering Cancer Center, New York City, USA.
 
 References:
+-----------
     [1] Anders, S and Huber, W (2010): `Differential expression analysis for sequence count data`. 
 
+Contributions:
+--------------
+    15 Aug. 2013 
+    Philippe Moncuquet
+    Bioinformatics Analyst, Bioinformatics Core, CSIRO Mathematics, Informatics and Statistics
+    
+    Extended the DESeq result.
+
 Contact:
+--------
     vipin [at] cbio.mskcc.org 
 
