@@ -1,3 +1,21 @@
+TODO list 
+    
+    get rid of support for octave from counting  
+
+    compute_sequence_read.py program should work with GTF/GFF file and multiple BAM files
+
+    give rights to access count table from other programs too the interface. gff/bam or count table and the condition details
+
+    single dependency folder for tools 
+
+    test-data set more comprehensive 
+
+
+
+
+
+
+
 ----------------------------------------------------
 DESeq-hts: A Galaxy wrapper for DESeq version 1.10.1
 ----------------------------------------------------
