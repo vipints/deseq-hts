@@ -351,15 +351,22 @@ def main():
     Main Program Procedure
     """
     
+
+    #TODO remove the opt parse option 
     options = parse_options(sys.argv)
     contigs = dict()
 
     time_total = time.time()
 
+    # TODO handle multiple BAM files on a single run and make the correpsonding lib. files details
+
+
     ### iterate over alignment file(s)
     for file in options.alignment.split(','):
         options.is_bam = False
         ### open file stream
+
+        # FIXME no input from stream 
         if file == '-':
             infile = sys.stdin
         elif len(file) > 3 or options.bam_force:
@@ -386,7 +393,7 @@ def main():
 
             ### check if we have a version on disk
             if os.path.isfile(options.anno + '.pickle') and os.path.isfile(options.anno + '.dump.info'):
-                if options.verbose:
+               """ if options.verbose:
                     t0 = time.time()
                     print >> sys.stderr, 'Loading annotation from pickle/dump files ...'
                 idx2gene = cPickle.load(open(options.anno + '.pickle', 'r'))
@@ -403,9 +410,10 @@ def main():
                 info_file.close()
                 if options.verbose:
                     t1 = time.time() - t0
-                    print >> sys.stderr, "... done - last took %i secs" % t1
+                    print >> sys.stderr, "... done - last took %i secs" % t1"""
             else:
                 is_gff = check_file_type(options.anno)
+                # FIXME one parser function to get feature information from GFF/GTF file 
 
                 if is_gff:
                     print 'gff-type file are here '
