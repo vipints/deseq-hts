@@ -3,6 +3,7 @@ TODO list
     get rid of support for octave from counting  
 
     compute_sequence_read.py program should work with GTF/GFF file and multiple BAM files
+    python to talk with c++ counting script will be a good idea,
 
     give rights to access count table from other programs too the interface. gff/bam or count table and the condition details
 
@@ -10,6 +11,7 @@ TODO list
 
     test-data set more comprehensive 
 
+    
 
 
 
