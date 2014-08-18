@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<tool_dependency>
+    <package name="R_3_0_3" version="3.0.3">
+        <repository changeset_revision="f386d7431fe0" name="package_r_3_0_3" owner="iuc" toolshed="http://toolshed.g2.bx.psu.edu" />
+    </package>
+    <package name="deseq2" version="1.4.5">
+        <repository changeset_revision="" name="package_deseq2_1_4_5" owner="iuc" toolshed="http://testtoolshed.g2.bx.psu.edu" />
+    </package>
+</tool_dependency>
