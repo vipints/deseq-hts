@@ -9,11 +9,9 @@ Requirement:
 import os
 import re
 import sys
-import pdb
 import time
 import array
 import pysam
-import cPickle
 
 def parse_options(argv):
     """
