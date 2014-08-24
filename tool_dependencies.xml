@@ -6,4 +6,7 @@
     <package name="deseq2" version="1.4.5">
         <repository changeset_revision="" name="package_deseq2_1_4_5" owner="iuc" toolshed="http://testtoolshed.g2.bx.psu.edu" />
     </package>
+    <package name="deseq" version="">
+        <repository changeset_revision="" name="" owner="iuc" toolshed="http://testtoolshed.g2.bx.psu.edu" />
+    </package>
 </tool_dependency>
