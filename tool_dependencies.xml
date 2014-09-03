@@ -12,4 +12,7 @@
     <package name="dexseq" version="">
         <repository changeset_revision="" name="" owner="iuc" toolshed="http://testtoolshed.g2.bx.psu.edu" />
     </package>
+    <package name="samtools" version="">
+        <repository changeset_revision="" name="" owner="iuc" toolshed="http://testtoolshed.g2.bx.psu.edu" />
+    </package>
 </tool_dependency>
